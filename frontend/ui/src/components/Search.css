@@ -1,0 +1,120 @@
+.search-results-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.search-results-container h2 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.search-results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.search-result-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.search-result-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cake-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.cake-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cake-details {
+  padding: 20px;
+}
+
+.cake-details h3 {
+  margin: 0 0 10px;
+  color: #333;
+  font-size: 18px;
+}
+
+.cake-price {
+  color: #ff6b00;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+
+.cake-description {
+  color: #666;
+  font-size: 14px;
+  margin: 0 0 15px;
+  line-height: 1.5;
+}
+
+.view-details-btn {
+  background: #ff6b00;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  width: 100%;
+}
+
+.view-details-btn:hover {
+  background: #ff8533;
+}
+
+.loading-spinner {
+  text-align: center;
+  color: #666;
+  font-size: 18px;
+  padding: 40px 0;
+}
+
+.no-results {
+  text-align: center;
+  padding: 40px 0;
+  color: #666;
+}
+
+.no-results p:first-child {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.no-results p:last-child {
+  font-size: 14px;
+  color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .search-results-container {
+    padding: 20px;
+  }
+
+  .search-results-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cake-image {
+    height: 180px;
+  }
+} 
