@@ -6,7 +6,7 @@ import Home from './components/Home';
 import InsertProduct from './components/InsertProduct';
 import Cart from './components/Cart';
 import CustomizeItem from './components/CustomizeItem';
-import { BrowserRouter as Router, Routes, Route } from "reac    t-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import UpdateCakes from './components/UpdateCakes';
 import UpdateForm from './components/UpdateForm';
 import Footer from './components/Footer';
